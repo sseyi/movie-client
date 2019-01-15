@@ -10,6 +10,12 @@ const authenticatedOptions = (
   </React.Fragment>
 )
 
+const alwaysOptions = (
+  <React.Fragment>
+    <Link to="/">Home</Link>
+  </React.Fragment>
+)
+
 const unauthenticatedOptions = (
   <React.Fragment>
     <Link to="/sign-up">Sign Up</Link>
@@ -17,19 +23,21 @@ const unauthenticatedOptions = (
   </React.Fragment>
 )
 
-const alwaysOptions = (
+const movieClient = (
   <React.Fragment>
-    <Link to="/">Home</Link>
+    <Link to="/form">Movies</Link>
+    <Link to="/form">Ratings</Link>
   </React.Fragment>
 )
 
 const Header = ({ user }) => (
   <header className="main-header">
-    <h1>Uber, But For Taxis</h1>
+    <h1>Seen It</h1>
     <nav>
       { user && <span>Welcome, {user.email}</span>}
       { user ? authenticatedOptions : unauthenticatedOptions }
       { alwaysOptions }
+      { movieClient }
     </nav>
   </header>
 )
