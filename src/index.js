@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import App from './view/App'
+import App from './auth/App'
 import { HashRouter } from 'react-router-dom'
 
 

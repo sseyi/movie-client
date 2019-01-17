@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom'
 
 import { handleErrors, changePassword } from '../api'
 import messages from '../messages'
-import apiUrl from '../../apiConfig'
+import apiUrl from '../apiConfig'
 
 class ChangePassword extends Component {
   constructor () {
