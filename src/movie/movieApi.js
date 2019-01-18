@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-const apiUrl = 'http://localhost:4741'
+import apiUrl from '../auth/apiConfig.js'
 
 export const getMovies = () => {
   return fetch(apiUrl + '/movies', {
