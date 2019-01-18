@@ -10,6 +10,7 @@ const authenticatedOptions = (
     <Link to="/movies">Movies</Link>
     <Link to="/movie-create">Create</Link>
     <Link to="/movie-update">Update</Link>
+    <Link to="/movie-delete">Delete</Link>
   </React.Fragment>
 )
 
@@ -23,6 +24,10 @@ const unauthenticatedOptions = (
 
 const alwaysOptions = (
   <React.Fragment>
+    <Link to="/"><img 
+      src={require('../images/4.jpg')} 
+      className= 'logo'/>
+    </Link>
     <Link to="/">Home</Link>
   </React.Fragment>
 )

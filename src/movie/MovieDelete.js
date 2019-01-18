@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+import './MovieDelete.scss'
 
-import { axiosPatchMovie } from './movieApi'
+import { axiosDeleteMovie } from './movieApi'
 
-export default class MovieUpdate extends Component {
+export default class MovieDelete extends Component {
   constructor(props) {
     super(props)
   
@@ -57,7 +58,7 @@ export default class MovieUpdate extends Component {
     //   .then(this.clearForm)
     //   .catch(() => console.error('oh no got an error'))
 
-    axiosPatchMovie(data, this.props.user)
+    axiosDeleteMovie(data, this.props.user)
       .then(() => this.props.flash('SEEN IT!,(Entry Successfully Deleted)','flash-success'))
       .then(this.clearForm)
       .then(this.props.getAllMovies)

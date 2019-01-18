@@ -71,3 +71,14 @@ export const axiosPatchMovie = (data, user) => {
     }
   })
 }
+
+export const axiosDeleteMovie = (data, user) => {
+  const { id } = data
+  delete data.id
+  return axios.delete(apiUrl + '/movies/' + id, {
+    headers: {
+      'Authorization': `Token token=${user.token}`,
+    }
+  })
+}
+

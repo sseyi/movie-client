@@ -80,7 +80,7 @@ class App extends Component {
             <MovieUpdate movies={this.state.movies} flash={this.flash} user={user} />
           )} />
           <AuthenticatedRoute user={user} path='/movie-delete' render={() => (
-            <MovieUpdate movies={this.state.movies} flash={this.flash} user={user} />
+            <MovieDelete movies={this.state.movies} flash={this.flash} user={user} />
           )} />
         </main>
       </React.Fragment>

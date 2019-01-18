@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './MovieDelete.scss'
 
 import { axiosPatchMovie } from './movieApi'
 
