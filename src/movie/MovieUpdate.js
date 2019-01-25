@@ -6,7 +6,6 @@ import { axiosPatchMovie } from './movieApi'
 export default class MovieUpdate extends Component {
   constructor(props) {
     super(props)
-    console.log(this.props)
     this.state = {
       title: '',
       year: '',
@@ -16,7 +15,6 @@ export default class MovieUpdate extends Component {
   }
 
   componentDidMount () {
-    console.log (this.props)
     const firstMovieId = this.props.movies[0].id
     this.changeMovieData(firstMovieId)
   }
@@ -51,7 +49,6 @@ export default class MovieUpdate extends Component {
   }
 
   handleFormSubmit = event => {
-    event.preventDefault()
     const data = { ...this.state }
     // patchMovie(data, this.props.user)
     //   .then(res => res.ok ? res : new Error())

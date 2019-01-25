@@ -50,7 +50,6 @@ export default class MovieDelete extends Component {
   }
 
   handleFormSubmit = event => {
-    event.preventDefault()
     const data = { ...this.state }
     // patchMovie(data, this.props.user)
     //   .then(res => res.ok ? res : new Error())

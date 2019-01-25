@@ -1,4 +1,9 @@
 "Seen It" (Movie Client Application)
+
+https://sseyi.github.io/movie-client/#/
+
+![seenit](https://media.git.generalassemb.ly/user/16959/files/0777ce80-2077-11e9-9037-5e8ff346d828)
+
 This application was designed by, Seyi Solanke as the final capstone project for General Assembly. This single page movie-client application is called "Seen It". It provides an index of movies that allows the users to view, create, update & delete entires as well.
 
 Installation

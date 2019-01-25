@@ -30,7 +30,6 @@ export default class MovieCreate extends Component {
   }
 
   handleFormSubmit = event => {
-    event.preventDefault()
     const data = { ...this.state }
     //   postMovie(data, this.props.user)
     //     .then(res => res.ok ? res : new Error())
