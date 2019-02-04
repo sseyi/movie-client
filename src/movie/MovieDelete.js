@@ -50,6 +50,7 @@ export default class MovieDelete extends Component {
   }
 
   handleFormSubmit = event => {
+    event.preventDefault()
     const data = { ...this.state }
     // patchMovie(data, this.props.user)
     //   .then(res => res.ok ? res : new Error())
@@ -58,7 +59,7 @@ export default class MovieDelete extends Component {
     //   .catch(() => console.error('oh no got an error'))
 
     axiosDeleteMovie(data, this.props.user)
-      .then(() => this.props.flash('SEEN IT!,(Entry Successfully Deleted)','flash-success'))
+      .then(() => this.props.flash('NO LONGER SHOWING!,(Entry Successfully Deleted)','flash-success'))
       .then(this.clearForm)
       .then(this.props.getAllMovies)
       .catch(() => console.error('oh no got an error'))

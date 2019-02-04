@@ -77,7 +77,7 @@ class App extends Component {
             <MovieCreate getAllMovies={this.getAllMovies} flash={this.flash} user={user} />
           )} />
           <AuthenticatedRoute user={user} path='/movie-update' render={() => (
-            <MovieUpdate movies={this.state.movies} flash={this.flash} user={user} />
+            <MovieUpdate getAllMoviesmovies={this.getAllMovies} flash={this.flash} user={user} />
           )} />
           <AuthenticatedRoute user={user} path='/movie-delete' render={() => (
             <MovieDelete movies={this.state.movies} flash={this.flash} user={user} getAllMovies={this.getAllMovies} />
