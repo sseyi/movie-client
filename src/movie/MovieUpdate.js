@@ -30,6 +30,7 @@ export default class MovieUpdate extends Component {
   }
 
   handleInputChange = event => {
+    event.preventDefault()
     const { name, value } = event.target
     if (name === 'id') {
       this.changeMovieData(value)
