@@ -30,7 +30,6 @@ export default class MovieUpdate extends Component {
   }
 
   handleInputChange = event => {
-    event.preventDefault()
     const { name, value } = event.target
     if (name === 'id') {
       this.changeMovieData(value)
@@ -50,6 +49,7 @@ export default class MovieUpdate extends Component {
   }
 
   handleFormSubmit = event => {
+    event.preventDefault()
     const data = { ...this.state }
     // patchMovie(data, this.props.user)
     //   .then(res => res.ok ? res : new Error())
